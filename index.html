@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book Shelf</title>
+    <title>Bookshelf</title>
     <script defer src="book-data.js"></script>
     <script defer src="script.js"></script>
     <link rel="stylesheet" href="style.css">
@@ -11,6 +11,17 @@
 <body>
     <div id="header">
         <h1>Bookshelf</h1>
+        <div id="controller">
+            <label>
+                <input type="checkbox" name="sort-by-author"> Sort by Author Name
+            </label>
+            <label>
+                <input type="checkbox" name="sort-by-title"> Sort by Title
+            </label>
+            <label>
+                <input type="checkbox" name="sort-by-language"> Sort by Language
+            </label>
+        </div>
     </div>
     <div id="bookshelf"></div>    
 </body>
