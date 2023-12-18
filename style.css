@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+  }
+  #header{
+    background-color:lightsteelblue;
+    padding: 5px 0;
+  }
+  h1{
+    text-align: center;
+  }
+#bookshelf{
+    height: 85vh;
+    overflow: auto;
+}
+ul{
+    list-style: none;
+}
+#bookshelf > ul{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  min-width: 650px;
+}
+.book{
+    border: 1px dashed gray;
+    border-radius: 5px;
+    width: 48%;
+    margin: 0.5%;  
+    padding: 10px;    
+}
+
+tr{
+    align-items: start;
+}
+
+
+tr:nth-of-type(even){
+    background-color: #f0f0f0;
+}
+tr:nth-of-type(odd){
+    background-color: rgb(197, 196, 196);
+}
+
+td:nth-of-type(odd){
+
+    font-weight: bold;
+}
